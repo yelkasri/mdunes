@@ -1,0 +1,77 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Article
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@article-margin-top:                            @global-grid-gutter-large;
+
+@article-title-font-size:                       round((@global-font-size * 2.5)); // 40px
+@article-title-line-height:                     round((@article-title-font-size * 1.05)); // 42px
+@article-title-font-weight:                     @global-heading-font-weight;
+@article-title-text-transform:                  @global-text-transform;
+
+@article-meta-font-size:                        round((@global-font-size * 0.937)); // 15px
+@article-meta-line-height:                      round((@article-meta-font-size * 1.5)); // 18px
+@article-meta-color:                            @global-muted-color;
+
+@article-lead-color:                            @global-color;
+@article-lead-font-size:                        @global-font-size; // 16px
+@article-lead-line-height:                      round((@article-lead-font-size * 1.5)); // 24px
+@article-lead-font-weight:                      400;
+
+@article-divider-margin:                        @global-margin-large;
+@article-divider-border:                        @global-border;
+
+//
+// New
+//
+
+@article-lead-text-transform:                   @global-text-transform;
+@article-blockquote-margin:                     @global-grid-gutter-large;
+@article-margin-top:                            @global-margin-small;
+@article-meta-margin-bottom:                    @global-margin-large;
+
+
+// Sub-object `uk-article-title`
+// ========================================================================
+
+.hook-article-title() {
+    margin-bottom: @article-margin-top;
+}
+
+
+// Sub-object `uk-article-meta`
+// ========================================================================
+
+.hook-article-meta() {
+    margin-bottom: @article-meta-margin-bottom;
+    margin-top: 0;
+    text-transform: @article-lead-text-transform;
+
+}
+
+
+// Sub-object `uk-article-lead`
+// ========================================================================
+
+.hook-article-lead() { text-transform: @article-lead-text-transform; }
+
+
+// Sub-object `uk-article-divider`
+// ========================================================================
+
+.hook-article-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-article-misc() {
+    blockquote { margin: @article-blockquote-margin; }
+}

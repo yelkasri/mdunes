@@ -1,0 +1,71 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Badge
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@badge-background:                              rgba(0,0,0,0);
+@badge-font-size:                               round((@global-font-size * 0.875)); // 14px
+@badge-line-height:                             round((@badge-notification-font-size * 1.42)); // 20px
+@badge-color:                                   @global-color;
+@badge-text-transform:                          uppercase;
+@badge-hover-color:                             @global-color;
+
+@badge-notification-font-size:                  round((@global-font-size * 0.875)); // 14px
+@badge-notification-line-height:                round((@badge-notification-font-size * 1.42)); // 20px
+
+@badge-success-background:                      @global-success-background;
+@badge-warning-background:                      @global-warning-background;
+@badge-danger-background:                       @global-danger-background;
+
+//
+// New
+//
+
+@badge-font-weight:                             @global-body-font-weight;
+@badge-contrast-color:                          @global-contrast-color;
+
+
+// Component
+// ========================================================================
+
+.hook-badge() { font-weight: @badge-font-weight; }
+
+
+// Color modifier
+// ========================================================================
+
+//
+// Modifier: `badge-success`
+//
+
+.hook-badge-success() {
+    color: @badge-contrast-color;
+}
+
+//
+// Modifier: `badge-warning`
+//
+
+.hook-badge-warning() {
+    color: @badge-contrast-color;
+}
+
+//
+// Modifier: `badge-danger`
+//
+
+.hook-badge-danger() {
+    color: @badge-contrast-color;
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-badge-misc() {}

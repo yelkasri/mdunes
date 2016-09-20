@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="rdmedia" method="upgrade">
+    <name>RD-Media PayFast</name>
+    <author>Robert Dam</author>
+    <creationDate>September 2013</creationDate>
+    <copyright>2011 Robert Dam</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>info@rd-media.org</authorEmail>
+    <authorUrl>www.rd-media.org</authorUrl>
+    <version>3.0.0</version>
+    <description>PayFast Payment Processor for RD-Media</description>
+    
+		<files>
+			<filename plugin="rdmpayfast">rdmpayfast.php</filename>
+			<folder>rdmedia_payfast</folder>
+		</files>
+		
+		<languages>
+			<language tag="en-GB">language/en-GB.plg_rdmedia_rdmpayfast.ini</language>
+		</languages>			
+	
+		<config>
+		
+			<fields name="params">
+			
+				<fieldset name="basic">
+					<field name="merchant_id" type="text"
+						default=""
+						size="40"
+						description="PLG_PAYFAST_MERCHANT_ID_DESC"
+						label="PLG_PAYFAST_MERCHANT_ID"
+					/>				
+					
+					<field name="merchant_key" type="text"
+						default="0"
+						size="40"
+						description="PLG_PAYFAST_MERCHANT_KEY_DESC"
+						label="PLG_PAYFAST_MERCHANT_KEY"
+					/>	
+					
+					<field name="pdt_key" type="text"
+						default="0"
+						size="40"
+						description="PLG_PAYFAST_PDT_KEY_DESC"
+						label="PLG_PAYFAST_PDT_KEY"
+					/>	
+					
+					<field name="item_description" type="text"
+						default="0"
+						size="40"
+						description="PLG_PAYFAST_ITEM_DESC"
+						label="PLG_PAYFAST_ITEM"
+					/>	
+	
+					<field name="layout" type="list"
+						default="0"
+						description="PLG_PAYFAST_LAYOUT_DESC"
+						label="PLG_PAYFAST_LAYOUT"
+					>
+						<option value="0">PLG_PAYFAST_HORIZON</option>
+						<option value="1">PLG_PAYFAST_VERTICAL</option>
+					</field>				
+	
+					<field name="sandbox_on" type="list"
+						default="0"
+						description="PLG_PAYFAST_SANDBOX_DESC"
+						label="PLG_PAYFAST_SANDBOX"
+					>
+						<option value="0">JOFF</option>
+						<option value="1">JON</option>
+					</field>	
+	
+					<field name="failure_tpl" type="text"
+						default="0"
+						size="15"
+						description="PLG_PAYFAST_FAILED_MESSAGE_DESC"
+						label="PLG_PAYFAST_FAILED_MESSAGE"
+					/>	
+	
+					<field name="success_tpl" type="text"
+						default="0"
+						size="15"
+						description="PLG_PAYFAST_SUCCESS_MESSAGE_DESC"
+						label="PLG_PAYFAST_SUCCESS_MESSAGE"
+					/>							
+	
+					<field name="cancel_tpl" type="text"
+						default="0"
+						size="15"
+						description="PLG_PAYFAST_CANCEL_MESSAGE_DESC"
+						label="PLG_PAYFAST_CANCEL_MESSAGE"
+					/>	
+					
+					<field name="remove_session" type="list"
+						default="0"
+						description="PLG_PAYFAST_REMOVE_SESSION_DESC"
+						label="PLG_PAYFAST_REMOVE_SESSION"
+					>
+						<option value="0">JOFF</option>
+						<option value="1">JON</option>
+					</field>					
+					
+				</fieldset>
+				
+			</fields>
+			
+		</config>
+
+</extension>

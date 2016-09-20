@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" method="upgrade" group="j2store">
+	<name>J2Store Promotion Global Discount</name>
+	<version>1.0</version>
+	<creationDate>January 2015</creationDate>
+	<author>J2Store</author>
+	<authorEmail>support@j2store.org</authorEmail>
+	<authorUrl>http://j2store.org</authorUrl>
+	<copyright>2010 Weblogicx India Private Limited</copyright>
+	<license>GNU General Public License v2</license>
+	<description>J2Store Plugin triggers Promotion </description>	
+	<files>
+		<filename plugin="promotion_globaldiscount">promotion_globaldiscount.php</filename>
+		<filename>index.html</filename>
+		<folder>promotion_globaldiscount</folder>	
+	</files>
+	<config>
+	
+	<fields name="params" addfieldpath="/plugins/j2store/promotion_globaldiscount/promotion_globaldiscount/fields">
+		<fieldset name="basic">
+			<field name="promotion_name" type="text" size="30" default="" label="J2STORE_PROMOTION_NAME_LABEL" description="J2STORE_PROMOTION_NAME_LABEL_DESC"/>
+			<field name="geozones" type="geozones" multiple="true" label="J2STORE_GEOZONES" description="J2STORE_GEOZONE_DESC" />
+			<field name="discount_type" default="F" type="radio" label="J2STORE_DISCOUNT_TYPE" description="J2STORE_DISCOUNT_TYPE_DESC" >
+		  		<option value="F">J2STORE_VALUE_TYPE_FIXED_PRICE</option>
+      	  		<option value="P">J2STORE_VALUE_TYPE_PERCENTAGE</option>
+			</field>
+			<field name="discount_value" type="text" label="J2STORE_DISCOUNT_VALUE" description="J2STORE_DISCOUNT_VALUE_DESC" />
+			<field name="subtotal_minimum" type="text" label="J2STORE_PROMOTION_ORDER_MINIMUM_SUBTOTAL_REQUIRED" />
+			<field name ="subtotal_maximum" type="text" label="J2STORE_PROMOTION_ORDER_MAXIMUM_SUBTOTAL_REQUIRED" />
+			
+			<field name="products" type="text" label="J2STORE_PRODUCTS" description="J2STORE_PRODUCTS_DESC" />
+			<field name="users" type="promotionusers" multiple="true" label="J2STORE_USERS" description="J2STORE_USERS_DESC" />
+	  <!--  <field name="promotions" type="discounts" default="" label="J2STORE_PROMOTIONS" description="J2STORE_PROMOTION_DISCOUNT_TYPE" /> -->
+    	 </fieldset>     	
+	</fields>	
+	</config>	
+</extension>

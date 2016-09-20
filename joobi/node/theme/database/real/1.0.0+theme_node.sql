@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `#__theme_node` (
+ `tmid` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+ `type` tinyint(3) unsigned NOT NULL DEFAULT '1',
+ `namekey` varchar(255) NOT NULL,
+ `publish` tinyint(4) NOT NULL DEFAULT '1',
+ `premium` tinyint(3) unsigned NOT NULL DEFAULT '0',
+ `core` tinyint(3) NOT NULL DEFAULT '0',
+ `wid` mediumint(8) unsigned NOT NULL DEFAULT '0',
+ `alias` varchar(255) NOT NULL,
+ `filid` int(10) unsigned NOT NULL DEFAULT '0',
+ `created` int(10) unsigned NOT NULL DEFAULT '0',
+ `modified` int(10) unsigned NOT NULL DEFAULT '0',
+ `availability` tinyint(3) unsigned NOT NULL DEFAULT '1',
+ `folder` varchar(100) NOT NULL,
+ `params` text NOT NULL,
+ `rolid` smallint(5) unsigned NOT NULL DEFAULT '1',
+ `uid` int(10) unsigned NOT NULL DEFAULT '0',
+ `ordering` smallint(5) unsigned NOT NULL DEFAULT '999',
+ `framework` tinyint(3) unsigned NOT NULL DEFAULT '0',
+ PRIMARY KEY (`tmid`),
+ UNIQUE KEY `UK_theme_node_namekey` (`namekey`(100)),
+ KEY `IX_theme_node_type_publish_framework_core_premium` (`type`,`publish`,`framework`,`core`,`premium`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;

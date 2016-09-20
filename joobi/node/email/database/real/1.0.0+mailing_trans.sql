@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `#__mailing_trans` (
+ `mgid` int(10) unsigned NOT NULL,
+ `lgid` tinyint(3) unsigned NOT NULL DEFAULT '1',
+ `name` varchar(255) NOT NULL,
+ `ctext` longtext NOT NULL,
+ `chtml` longtext NOT NULL,
+ `smail` char(100) NOT NULL,
+ `sname` char(50) NOT NULL,
+ `rmail` varchar(100) NOT NULL,
+ `rname` varchar(100) NOT NULL,
+ `auto` tinyint(4) NOT NULL DEFAULT '1',
+ `fromlgid` tinyint(3) unsigned NOT NULL DEFAULT '1',
+ `bouncemail` varchar(100) NOT NULL,
+ `authorid` int(10) unsigned NOT NULL DEFAULT '0',
+ `modified` int(10) unsigned NOT NULL DEFAULT '0',
+ `intro` text NOT NULL,
+ `smsmessage` text NOT NULL,
+ `title` varchar(255) NOT NULL,
+ `subtitle` varchar(255) NOT NULL,
+ PRIMARY KEY (`mgid`,`lgid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;

@@ -1,0 +1,66 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Alert
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@alert-margin-vertical:                         @global-margin;
+@alert-padding:                                 round((@global-padding / 3)); // 10px
+@alert-background:                              @global-background;
+@alert-color:                                   @global-color;
+
+@alert-success-background:                      @global-background;
+@alert-success-color:                           @global-success-color;
+
+@alert-warning-background:                      @global-background;
+@alert-warning-color:                           @global-warning-color;
+
+@alert-danger-background:                       @global-background;
+@alert-danger-color:                            @global-danger-color;
+
+@alert-large-padding:                           @global-padding;
+
+//
+// New
+//
+
+@alert-border-width:                            @global-border-width;
+@alert-border:                                  @global-border;
+@alert-success-border:                          fade(@global-success-color, 50%);
+@alert-warning-border:                          fade(@global-warning-color, 50%);
+@alert-danger-border:                           fade(@global-danger-color, 50%);
+
+
+// Component
+// ========================================================================
+
+.hook-alert() { border: @alert-border-width solid @alert-border; }
+
+
+// Modifier: `uk-alert-success`
+// ========================================================================
+
+.hook-alert-success() { border-color: @alert-success-border; }
+
+
+// Modifier: `uk-alert-warning`
+// ========================================================================
+
+.hook-alert-warning() { border-color: @alert-warning-border; }
+
+
+// Modifier: `uk-alert-danger`
+// ========================================================================
+
+.hook-alert-danger() { border-color: @alert-danger-border; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-alert-misc() {}

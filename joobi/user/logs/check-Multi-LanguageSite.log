@@ -1,0 +1,32 @@
+#<?php die('Access Not Permitted'); ?>
+## ( date: 30 Aug 16 11:34AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_installer&view=install
+## 
+_checkMultiLanguageSite 1
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_installer&view=install
+## 
+Array
+(
+    [en-GB] => Array
+        (
+            [name] => English (en-GB)
+            [tag] => en-GB
+            [rtl] => 0
+            [locale] => en_GB.utf8, en_GB.UTF-8, en_GB, eng_GB, en, english, english-uk, uk, gbr, britain, england, great britain, uk, united kingdom, united-kingdom
+            [firstDay] => 0
+            [weekEnd] => 0,6
+        )
+
+)
+
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_installer&view=install
+## 
+Array
+(
+)
+
+## End ##

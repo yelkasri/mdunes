@@ -1,0 +1,13 @@
+/*Export of the extension joomla30.admin.theme*/
+
+SET @pk_5_1876 = ( SELECT `wid` FROM `#__extension_node`  WHERE `namekey`='joomla30.admin.theme' LIMIT 1 );
+UPDATE `#__extension_node`  SET `publish`='1',`folder`='joomla30',`wid`=@pk_5_1876,`params`='',`type`='101',`name`='Joomla Responsive Admin theme',`destination`='user|theme|admin',`trans`='1',`certify`='1',`namekey`='joomla30.admin.theme',`version`='1706',`lversion`='1706',`pref`='0',`install`='',`core`='1',`showconfig`='1',`framework`='20' WHERE  `namekey`='joomla30.admin.theme';
+INSERT IGNORE INTO `#__extension_node` (`publish`,`folder`,`wid`,`params`,`type`,`name`,`destination`,`trans`,`certify`,`namekey`,`version`,`lversion`,`pref`,`install`,`core`,`showconfig`,`framework`) VALUES ('1','joomla30',@pk_5_1876,'','101','Joomla Responsive Admin theme','user|theme|admin','1','1','joomla30.admin.theme','1706','1706','0','','1','1','20');
+
+INSERT IGNORE INTO `#__translation_en` (`text`,`auto`,`imac`) VALUES ('Edit','2','1206732361LXFE');
+INSERT IGNORE INTO `#__translation_en` (`text`,`auto`,`imac`) VALUES ('Current File','1','1206732375LZCF'),('Select Files','2','1206732376KOVE'),('Remove','2','1225790126CCSR'),('Close','2','1228820287MBVC'),('Add file','2','1242282432ARKM'),('Current Image','2','1298350386KTQN'),('Attach Existing File','2','1327712854HKDV'),('Complete','1','1338312640PTMH'),('Start upload','2','1359740894RBVZ'),('Remove all','2','1359740894RBWA'),('Are you sure you want to remove?','2','1369750048LRQB'),('Drag files here or click \"Add files\" to choose','2','1418159379KSUW'),('Click here to view the file','1','1446651300CLYK');
+SET @ref_wid_0 = ( SELECT `wid` FROM `#__extension_node`  WHERE `namekey`='joomla30.admin.theme' LIMIT 1);
+REPLACE INTO `#__extension_dependency` (`wid`,`ref_wid`) VALUES (( SELECT `wid` FROM `#__extension_node`  WHERE `namekey`='joomla.node' LIMIT 1),@ref_wid_0);
+INSERT IGNORE INTO `#__translation_reference` (`wid`,`load`,`imac`) VALUES (@ref_wid_0,'2','1206732361LXFE');
+INSERT IGNORE INTO `#__translation_reference` (`wid`,`load`,`imac`) VALUES (@ref_wid_0,'1','1206732375LZCF'),(@ref_wid_0,'1','1206732376KOVE'),(@ref_wid_0,'1','1225790126CCSR'),(@ref_wid_0,'1','1228820287MBVC'),(@ref_wid_0,'1','1242282432ARKM'),(@ref_wid_0,'1','1298350386KTQN'),(@ref_wid_0,'1','1327712854HKDV'),(@ref_wid_0,'1','1338312640PTMH'),(@ref_wid_0,'1','1359740894RBVZ'),(@ref_wid_0,'1','1359740894RBWA'),(@ref_wid_0,'1','1369750048LRQB'),(@ref_wid_0,'1','1418159379KSUW'),(@ref_wid_0,'1','1446651300CLYK');
+REPLACE INTO `#__extension_info` (`wid`,`author`,`userversion`,`userlversion`) VALUES ((@ref_wid_0),'','','');

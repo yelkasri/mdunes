@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `#__extension_version` (
+ `vsid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ `wid` int(10) unsigned NOT NULL DEFAULT '0',
+ `version` int(10) unsigned NOT NULL DEFAULT '0',
+ `status` tinyint(4) NOT NULL DEFAULT '0',
+ `created` int(10) unsigned NOT NULL DEFAULT '0',
+ `beta` smallint(5) unsigned NOT NULL DEFAULT '0',
+ `filid` int(10) unsigned NOT NULL DEFAULT '0',
+ `level` tinyint(3) unsigned NOT NULL DEFAULT '0',
+ `modified` int(10) unsigned NOT NULL DEFAULT '0',
+ `uid` int(10) unsigned NOT NULL DEFAULT '0',
+ `encoding` varchar(100) NOT NULL,
+ `changelog` text NOT NULL,
+ `final` tinyint(3) unsigned NOT NULL DEFAULT '0',
+ `sha1` varchar(100) NOT NULL,
+ `code` char(32) NOT NULL,
+ `marketing` varchar(255) NOT NULL,
+ PRIMARY KEY (`vsid`),
+ UNIQUE KEY `UK_extension_version_wid_version` (`wid`,`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;

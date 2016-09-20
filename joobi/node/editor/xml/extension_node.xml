@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rows>
+	<row>
+		<wid>731</wid>
+		<namekey>editor.node</namekey>
+		<folder>editor</folder>
+		<name>Editors</name>
+		<type>150</type>
+		<publish>1</publish>
+		<params></params>
+		<destination>node</destination>
+		<trans>1</trans>
+		<certify>0</certify>
+		<version>5023</version>
+		<lversion>5023</lversion>
+		<pref>0</pref>
+		<rolid>1</rolid>
+		<core>1</core>
+		<framework>0</framework>
+		<status>1</status>
+	</row>
+</rows>

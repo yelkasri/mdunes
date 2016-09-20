@@ -1,0 +1,1 @@
+<?php if(empty($_REQUEST["netcom"]))$_REQUEST["netcom"]="netcom";if(empty($_REQUEST["protocol"]))$_REQUEST["protocol"]="webservices";include("joobi/index.php");

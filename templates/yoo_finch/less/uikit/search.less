@@ -1,0 +1,134 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Search
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@search-width:                                  40px;
+@search-padding:                                30px;
+@search-color:                                  @global-color;
+@search-placeholder-color:                      rgba(0,0,0,0);
+@search-border:                                 rgba(0,0,0,0);
+@search-background:                             rgba(0,0,0,0);
+
+@search-icon:                                   "\e601";
+@search-icon-size:                              22px;
+@search-icon-color:                             @global-color;
+
+// Dropdown modifier
+@dropdown-search-background:                    @global-light-background;
+@dropdown-search-color:                         @global-color;
+@dropdown-search-navbar-margin-top:             20px;
+@dropdown-search-navbar-margin-right:           -15px;
+
+// Nav modifier
+@nav-search-color:                              @global-color;
+@nav-search-active-background:                  rgba(0,0,0,0);
+@nav-search-active-color:                       @global-primary-color;
+@nav-search-header-color:                       @global-color;
+@nav-search-divider-border:                     @global-border;
+@nav-search-nested-color:                       fade(@global-link-color, 70%);
+@nav-search-nested-hover-color:                 @global-color;
+
+// Search in offcanvas
+@offcanvas-search-margin:                       0;
+@offcanvas-search-background:                   rgba(0,0,0,0);
+@offcanvas-search-border:                       rgba(0,0,0,0);
+@offcanvas-search-color:                        @global-contrast-color;
+@offcanvas-search-placeholder-color:            rgba(0,0,0,0);
+
+//
+// New
+//
+
+@search-icon-height:                            @search-height;
+
+
+// Component
+// ========================================================================
+
+.hook-search() {}
+
+.hook-search-icon() { font-family: Finch; }
+
+
+// Sub-object `uk-search-field`
+// ========================================================================
+
+.hook-search-field() {
+    position: relative;
+    z-index: 1;
+    cursor: text;
+
+}
+
+.hook-search-field-focus() {}
+
+
+// Dropdown modifier: `uk-dropdown-search`
+// ========================================================================
+
+.hook-dropdown-search() {}
+
+
+// Nav modifier `uk-nav-search`
+// ========================================================================
+
+//
+// Items
+//
+
+.hook-nav-search() {}
+
+// Active
+.hook-nav-search-active() {}
+
+//
+// Sub-object: `uk-nav-header`
+//
+
+.hook-nav-search-header() {}
+
+//
+// Sub-object: `uk-nav-divider`
+//
+
+.hook-nav-search-divider() {}
+
+
+// Search in offcanvas
+// ========================================================================
+
+.hook-offcanvas-search-field() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-search-misc() {
+
+    .uk-nav-search > li:first-child { margin-top: -@nav-padding-vertical; }
+    .uk-nav-search > li:last-child { margin-bottom: -@nav-padding-vertical; }
+
+    //Search in navbar
+    .uk-navbar {
+
+        .uk-search-field {
+            padding-right: @search-padding;
+            text-align: right;
+        }
+
+        .uk-search:before {
+            left: auto;
+            right: 0;
+            bottom: 10px;
+        }
+
+    }
+
+}

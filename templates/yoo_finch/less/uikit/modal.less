@@ -1,0 +1,109 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Modal
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@modal-z-index:                                 @global-z-index + 10;
+
+@modal-dialog-background:                       @global-background;
+
+@modal-header-margin-bottom:                    @global-margin;
+
+@modal-footer-margin-top:                       @global-margin;
+
+@modal-caption-color:                           @global-contrast-color;
+
+@modal-dialog-blank-close-background:           @global-light-background;
+
+
+@modal-dialog-blank-close-background:          @global-light-background;
+@modal-dialog-blank-close-width:               50px;
+@modal-dialog-blank-close-height:              @modal-dialog-blank-close-width;
+
+
+// Component
+// ========================================================================
+
+.hook-modal() {}
+
+
+// Sub-object: `uk-modal-dialog`
+// ========================================================================
+
+.hook-modal-dialog() {}
+
+
+// Modifier: `uk-modal-dialog-lightbox`
+// ========================================================================
+
+.hook-modal-dialog-lightbox() {}
+
+
+// Sub-object: `uk-modal-header`
+// ========================================================================
+
+.hook-modal-header() {}
+
+
+// Sub-object: `uk-modal-footer`
+// ========================================================================
+
+.hook-modal-footer() {}
+
+
+// Sub-object: `uk-modal-caption`
+// ========================================================================
+
+.hook-modal-caption() {
+
+    font-family: @global-heading-font-family;
+    font-size: @base-h3-font-size;
+    line-height: @base-h3-line-height;
+    bottom: auto;
+    margin-top: @global-margin;
+    > * { color: @modal-caption-color; }
+
+}
+
+
+// Sub-object: `uk-modal-spinner`
+// ========================================================================
+
+.hook-modal-spinner() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-modal-misc() {
+
+    .uk-modal-dialog-blank .uk-modal-close {
+        background: @modal-dialog-blank-close-background;
+    }
+
+
+
+    .uk-modal-dialog-blank > .uk-close:first-child {
+        top: 0;
+        right: 0;
+    }
+
+    // Tablet and bigger
+    @media (min-width: @breakpoint-medium) {
+
+        .uk-modal-dialog-blank .uk-modal-close:first-child {
+            width: @modal-dialog-blank-close-width;
+            height: @modal-dialog-blank-close-height;
+        }
+
+        .uk-modal-dialog-blank .uk-modal-close:after { font-size: 20px; }
+
+    }
+
+}

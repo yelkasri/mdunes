@@ -1,0 +1,68 @@
+/* Show IDEAL Logo */
+#plg_rdmedia_ideal{
+	width:100%;
+	color: #999999;
+	border:#999999 solid 1px;
+	height:80px;
+	background: url(../images/targetpay-ideal.png) no-repeat;
+	margin-top: 25px;
+}
+
+#plg_rdmedia_mr_cash{
+	width:100%;
+	color: #999999;
+	border:#999999 solid 1px;
+	height:80px;
+	background: url(../images/targetpay-mrcash.png) no-repeat;
+	margin-top: 25px;
+}
+
+#plg_rdmedia_sofort{
+	width:100%;
+	color: #999999;
+	border:#999999 solid 1px;
+	height:80px;
+	background: url(../images/targetpay-sofort.png) no-repeat;
+	margin-top: 25px;
+}
+
+/* Show IDEAL Bank Select */
+#plg_rdmedia_mollie_cards{
+	width: 50%;
+	height: 40px;
+	margin-left: 200px;
+	margin-top: 23px;
+	padding-left: 3px;
+}
+
+/* Show IDEAL Payment Button */
+/* You may change the margin-left for smaller contents. */
+#plg_rdmedia_ideal_confirmbutton, #plg_rdmedia_mr_cash_confirmbutton{
+	width:116px;
+	height: 87px;
+	margin-left: 600px;
+	margin-top: -48px;
+	position: absolute;
+}
+
+/* Show IDEAL Payment Button */
+/* You may change the margin-left for smaller contents. */
+.ideal_button {
+	height: 50px;
+	width: 116px;
+	background: url(../images/ideal-betaal-nu.png) repeat-x top;
+	border:#dbdedf solid 1px;
+	color: #CCCCCC;
+	font-size: 85%;
+	text-transform: uppercase;
+}
+
+.ideal_button:hover {
+	height: 50px;
+	width: 116px;
+	background: url(../images/ideal-betaal-nu.png) repeat-x top;
+	border:#003a54 solid 1px;
+	color: #CCCCCC;
+	font-size: 85%;
+	text-transform: uppercase;
+}

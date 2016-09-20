@@ -1,0 +1,62 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: HTML editor
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@htmleditor-navbar-background:                @global-background;
+
+@htmleditor-navbar-nav-color:                 @global-muted-color;
+
+@htmleditor-navbar-nav-hover-background:      fade(@global-muted-background, 50%);
+@htmleditor-navbar-nav-hover-color:           @global-contrast-color;
+@htmleditor-navbar-nav-onclick-background:    @global-light-background;
+@htmleditor-navbar-nav-onclick-color:         @global-muted-color;
+@htmleditor-navbar-nav-active-background:     fade(@global-muted-background, 50%);
+@htmleditor-navbar-nav-active-color:          @global-contrast-color;
+
+@htmleditor-content-border:                   @global-border;
+@htmleditor-content-background:               @global-background;
+
+@htmleditor-content-border:                   @global-muted-border;
+@htmleditor-content-background:               @global-background;
+@htmleditor-content-padding:                  30px;
+@htmleditor-content-split-border:             @global-muted-border;
+
+@htmleditor-fullscreen-z-index:               @global-z-index - 10;
+
+//
+// New
+//
+
+@htmleditor-navbar-border-width:              @global-border-width;
+@htmleditor-navbar-border:                    @global-muted-border;
+
+
+// Component
+// ========================================================================
+
+.hook-htmleditor() {}
+
+.hook-htmleditor-navbar() { border: @htmleditor-navbar-border-width solid @htmleditor-navbar-border; }
+
+.hook-htmleditor-navbar-nav() {}
+
+.hook-htmleditor-navbar-nav-hover() {}
+
+.hook-htmleditor-navbar-nav-onclick() {}
+
+.hook-htmleditor-navbar-nav-active() {}
+
+.hook-htmleditor-content() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-htmleditor-misc() {}

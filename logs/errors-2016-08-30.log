@@ -1,0 +1,17 @@
+#
+#<?php die('Forbidden.'); ?>
+#Date: 2016-08-30 11:25:36 UTC
+#Software: Joomla Platform 13.1.0 Stable [ Curiosity ] 24-Apr-2013 00:00 GMT
+
+#Fields: datetime	priority clientip	category	message
+2016-08-30T11:25:36+00:00	WARNING ::1	jerror	JUser: :_load: Unable to load user with ID: 277
+2016-08-30T11:27:15+00:00	WARNING ::1	jerror	Component Uninstall: Trying to uninstall a core component.
+2016-08-30T11:27:15+00:00	WARNING ::1	jerror	Template Uninstall: Trying to uninstall a core template: sellacious
+2016-08-30T11:27:17+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:17+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:17+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:17+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:17+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:17+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:18+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.
+2016-08-30T11:27:18+00:00	WARNING ::1	jerror	Attempting to uninstall unknown extension from package. This extension may have already been removed earlier.

@@ -1,0 +1,1 @@
+<?php die("die"); ?>#x#a:3:{i:0;O:8:"stdClass":4:{s:5:"dbtid";s:2:"11";s:9:"ref_dbtid";s:1:"1";s:4:"name";s:3:"wid";s:5:"name2";s:3:"wid";}i:1;O:8:"stdClass":4:{s:5:"dbtid";s:2:"78";s:9:"ref_dbtid";s:1:"1";s:4:"name";s:3:"wid";s:5:"name2";s:3:"wid";}i:2;O:8:"stdClass":4:{s:5:"dbtid";s:2:"12";s:9:"ref_dbtid";s:1:"1";s:4:"name";s:3:"wid";s:5:"name2";s:3:"wid";}}

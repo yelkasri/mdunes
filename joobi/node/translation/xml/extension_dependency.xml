@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rows>
+	<row>
+		<exdpid>83</exdpid>
+		<wid>1097</wid>
+		<ref_wid>1097</ref_wid>
+		<namekey>apps.node</namekey>
+		<folder>apps</folder>
+		<name>Apps</name>
+		<type>150</type>
+		<publish>1</publish>
+		<status>1</status>
+		<params></params>
+		<destination>node</destination>
+		<parent>0</parent>
+		<trans>1</trans>
+		<certify>0</certify>
+		<version>4246</version>
+		<lversion>4246</lversion>
+		<pref>1</pref>
+		<rolid>1</rolid>
+		<install></install>
+		<ordering>434</ordering>
+		<core>1</core>
+		<modified>1466631785</modified>
+		<reload>1</reload>
+		<created>0</created>
+		<showconfig>0</showconfig>
+		<framework>0</framework>
+	</row>
+</rows>

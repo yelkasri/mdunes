@@ -1,0 +1,25 @@
+#<?php die('Access Not Permitted'); ?>
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the plugin and extension: users.user.plugin
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the plugin and extension: users.system.plugin
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the module and extension: joomla.quickicons.module
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the module and extension: joomla.shortmenu.module
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the plugin and extension: theme.system.plugin
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the plugin and extension: role.content.plugin
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the plugin and extension: role.system.plugin
+## End ##
+## ( date: 30 Aug 16 11:34AM (UTC) )## 
+Triggering cms specific function for the plugin and extension: apps.system.plugin
+## End ##

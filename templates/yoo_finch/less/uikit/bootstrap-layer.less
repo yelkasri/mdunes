@@ -1,0 +1,36 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+// ========================================================================
+// Name:            Bootstrap layer
+// Description:     Compatibility layer to match UIkit and Bootstrap style
+//==========================================================================
+
+// Variables
+// ========================================================================
+
+@bs-input-height:           27px;
+@bs-button-height:          27px;
+
+
+// Form overrides
+// ==========================================================================
+
+.row-fluid input[class*="span"] {
+    height: 37px;
+    min-height: 37px;
+    line-height: 37px;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-warning:hover,
+.btn.btn-success:hover,
+.btn.disabled:hover { border-color: rgba(0,0,0,0) !important; }
+
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active,
+.btn-link.uk-active,
+.btn-link:disabled { text-decoration: none; }
+
+.nav > li > a:focus { background-color: rgba(0,0,0,0); }

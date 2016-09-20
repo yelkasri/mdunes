@@ -1,0 +1,15 @@
+#<?php die('Access Not Permitted'); ?>
+## ( date: 30 Aug 16 11:42AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_installer&view=manage
+## 
+extension ID not provided, could not get from controller : installer
+## End ##
+## ( date: 30 Aug 16 11:42AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_installer&view=manage
+## 
+Array
+(
+    [0] => installer
+)
+
+## End ##

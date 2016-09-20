@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="2.5" type="plugin" group="rdmedia" method="upgrade">
+    <name>RD-Media Pay By Check</name>
+    <author>Robert Dam</author>
+    <creationDate>June 2013</creationDate>
+    <copyright>2011 Robert Dam</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>info@rd-media.org</authorEmail>
+    <authorUrl>www.rd-media.org</authorUrl>
+    <version>3.0.3</version>
+    <description>Pay by Check Processor for RD-Media</description>
+
+		<files>
+			<filename plugin="paybycheck">paybycheck.php</filename>
+			<folder>rdmedia_paybycheck</folder>
+		</files>	
+		
+		<languages>
+			<language tag="en-GB">language/en-GB.plg_rdmedia_paybycheck.ini</language>
+		</languages>		
+
+		<config>
+		
+			<fields name="params">
+
+				<fieldset name="basic">
+
+					<field name="infobox" type="text"
+						default="0"
+						size="40"
+						description="PLG_RDMEDIA_PBC_CUSTOMER_MSG_DESC"
+						label="PLG_RDMEDIA_PBC_CUSTOMER_MSG"
+					/>	
+					
+					<field name="layout" type="list"
+						default="0"
+						description="PLG_RDMEDIA_PBC_VIEW_DESCRIPTION"
+						label="PLG_RDMEDIA_PBC_PLUGIN_LAYOUT"
+					>
+						<option value="0">PLG_RDMEDIA_PBC_HORIZONTAL_VIEW</option>
+						<option value="1">PLG_RDMEDIA_PBC_VERTICAL_VIEW</option>
+					</field>										
+					
+					<field name="success_msg" type="text"
+						default="0"
+						size="15"
+						description="PLG_RDMEDIA_PBC_MSGINSCREEN_DESC"
+						label="PLG_RDMEDIA_PBC_MSGINSCREEN"
+					/>						
+					
+					<field name="send_confirmation" type="list"
+						default="0"
+						description="PLG_RDMEDIA_PBC_SEND_CONFIRMATION_DSC"
+						label="PLG_RDMEDIA_PBC_SEND_CONFIRMATION"
+					>
+						<option value="0">PLG_RDMEDIA_PBC_NO</option>
+						<option value="1">PLG_RDMEDIA_PBC_YES</option>
+					</field>												
+
+				</fieldset>
+
+			</fields>
+
+		</config>
+
+</extension>

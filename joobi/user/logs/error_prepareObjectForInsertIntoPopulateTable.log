@@ -1,0 +1,121 @@
+#<?php die('Access Not Permitted'); ?>
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+error function _prepareObjectForInsertIntoPopulateTable --
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+C:\wamp\www\kechventures\joobi\node\japps\data\view\japps_main.cca
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+layout_multiformstrans
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+stdClass Object
+(
+    [fid] => 24
+    [TC_name] => 1206961870KLBH
+    [TC_description] => 
+    [lgid] => 1
+    [fromlgid] => 1
+    [eid] => 24
+)
+
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+Array
+(
+    [C:\wamp\www\kechventures\joobi\node\apps\data\view\apps_show.cca] => 12
+    [C:\wamp\www\kechventures\joobi\node\apps\data\controller\0.apps.show.1.cca] => 12
+    [C:\wamp\www\kechventures\joobi\node\japps\data\view\japps_dashboard.cca] => 19
+)
+
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+error function _prepareObjectForInsertIntoPopulateTable --
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+C:\wamp\www\kechventures\joobi\node\japps\data\view\japps_main.cca
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+layout_multiformstrans
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+stdClass Object
+(
+    [fid] => 25
+    [TC_name] => 1392733055LQQG
+    [TC_description] => 
+    [lgid] => 1
+    [fromlgid] => 1
+    [eid] => 25
+)
+
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+Array
+(
+    [C:\wamp\www\kechventures\joobi\node\apps\data\view\apps_show.cca] => 12
+    [C:\wamp\www\kechventures\joobi\node\apps\data\controller\0.apps.show.1.cca] => 12
+    [C:\wamp\www\kechventures\joobi\node\japps\data\view\japps_dashboard.cca] => 19
+)
+
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+error function _prepareObjectForInsertIntoPopulateTable --
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+C:\wamp\www\kechventures\joobi\node\japps\data\view\japps_main.cca
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+layout_multiformstrans
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+stdClass Object
+(
+    [fid] => 26
+    [TC_name] => 1206732392OZUN
+    [TC_description] => 
+    [lgid] => 1
+    [fromlgid] => 1
+    [eid] => 26
+)
+
+## End ##
+## ( date: 30 Aug 16 11:39AM (UTC) )
+# On the page: /kechventures/administrator/index.php?option=com_japps&controller=apps&task=show&eid=36
+## 
+Array
+(
+    [C:\wamp\www\kechventures\joobi\node\apps\data\view\apps_show.cca] => 12
+    [C:\wamp\www\kechventures\joobi\node\apps\data\controller\0.apps.show.1.cca] => 12
+    [C:\wamp\www\kechventures\joobi\node\japps\data\view\japps_dashboard.cca] => 19
+)
+
+## End ##

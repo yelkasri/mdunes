@@ -1,0 +1,57 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Overlay
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@overlay-panel-padding:                         @global-padding;
+@overlay-panel-color:                           @global-color;
+
+@overlay-panel-background:                      @global-background;
+
+@overlay-icon:                                  "\e608";
+@overlay-icon-size:                             40px;
+@overlay-icon-color:                            @global-contrast-color;
+
+@overlay-panel-link-color:                      @global-color;
+@overlay-panel-link-text-decoration:            @global-text-decoration;
+
+@overlay-area-icon-size:                        40px;
+@overlay-area-icon:                             "\e608";
+
+
+// Sub-object `uk-overlay-panel`
+// ========================================================================
+
+.hook-overlay-panel() {}
+
+
+// Sub-object `uk-overlay-background`
+// ========================================================================
+
+.hook-overlay-background() {}
+
+
+// Sub-object `uk-overlay-image`
+// ========================================================================
+
+.hook-overlay-image() {}
+
+
+// Sub-object `uk-overlay-icon`
+// ========================================================================
+
+.hook-overlay-icon() { font-family: Finch; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-overlay-misc() {
+        .uk-overlay-panel a[class*='uk-icon-']:not(.uk-icon-button):hover { color: @global-primary-color;}
+}

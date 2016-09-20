@@ -1,0 +1,70 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Subnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@subnav-color:                                  @global-color;
+@subnav-hover-color:                            @global-link-color;
+@subnav-active-color:                           @global-primary-color;
+
+@subnav-line-border:                            @global-border;
+
+@subnav-pill-hover-background:                  rgba(0,0,0,0);
+@subnav-pill-hover-color:                       @global-color;
+@subnav-pill-active-background:                 @global-primary-background;
+@subnav-pill-active-color:                      @global-contrast-color;
+
+@subnav-disabled-color:                         @global-muted-color;
+
+//
+// New
+//
+
+@subnav-pill-border-width:                      @global-border-width;
+@subnav-pill-hover-border:                      @global-color;
+
+
+// Component
+// ========================================================================
+
+.hook-subnav() {}
+
+.hook-subnav-hover() {}
+
+.hook-subnav-active() {}
+
+
+// Modifier: `uk-subnav-line'
+// ========================================================================
+
+.hook-subnav-line-divider() {}
+
+
+// Modifier: `uk-subnav-pill'
+// ========================================================================
+
+.hook-subnav-pill() { border: @subnav-pill-border-width solid transparent; }
+
+.hook-subnav-pill-hover() { border-color: @subnav-pill-hover-border; }
+
+.hook-subnav-pill-active() { border-color: transparent; }
+
+
+// Disabled state
+// ========================================================================
+
+.hook-subnav-disabled() { border-color: transparent; }
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-subnav-misc() {
+        .uk-subnav + div { margin-top: @global-grid-gutter-large !important; }
+}

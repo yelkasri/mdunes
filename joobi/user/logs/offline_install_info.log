@@ -1,0 +1,106 @@
+
+ <br> _checkPublicParams()
+ <br> _defineConstants()
+ <br> _defineLocals()
+ <br> _usefullInitialInfo()
+ <br> ---- START OF NEW INFO LOGS ----
+ <br> PHP ver : 5.6.19
+ <br> _joobiTarGzSourcePath : C:\wamp\www\kechventures\tmp\install_57c56ed8bbb8a\japps_joomla_2.8.18\admin\joobi.tar.gz
+ <br> _joobiFolderTemporary : C:\wamp\www\kechventures\tmp\install_57c56ed8bbb8a\japps_joomla_2.8.18\joobi
+ <br> _joobiFolderDestinationPath : C:\wamp\www\kechventures\joobi
+ <br> _libPackagesPath : C:\wamp\www\kechventures\tmp\install_57c56ed8bbb8a\japps_joomla_2.8.18\joobi\lib_packages.txt
+ <br> htdocsPath : C:\wamp\www\kechventures\
+ <br> appName : japps
+ <br> cmsName : joomla
+ <br> _improvePerformance()
+ <br> _importFiles()
+ <br> importing joomla library files
+ <br> _settingUp()
+ <br> _checkExistingJoobi()
+ <br> Joobi Folder Exists (1 for Yes , empty for No) : 
+ <br> _extractAndMoveJoobi()
+ <br> using PharData for extracting joobi folder
+ <br> step1
+ <br> step2
+ <br> _runSQL()
+ <br> _createTables()
+ <br> ... in joomla
+ <br> _splitSql()
+ <br> _alterTables()
+ <br> _splitSql()
+ <br> _insertData()
+ <br> _splitSql()
+ <br> _postProcessing()
+ <br> _prepareForJoobi()
+ <br> _nodeInstallFunctions()
+ <br> before _getPackageListArray()
+ <br> _getPackageListArray()
+ <br> after _getPackageListArray() :
+ <br> 1. _runCustomInstall()
+ <br> 2. _runCustomInstall() : install_node
+ <br> calling install function for node :install with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : email_node
+ <br> calling install function for node :email with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : users_node
+ <br> calling install function for node :users with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : joomla_node
+ <br> calling install function for node :joomla with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : theme_node
+ <br> calling install function for node :theme with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : api_node
+ <br> 2. _runCustomInstall() : editor_node
+ <br> 2. _runCustomInstall() : output_node
+ <br> calling install function for node :output with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : role_node
+ <br> calling install function for node :role with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : category_node
+ <br> 2. _runCustomInstall() : apps_node
+ <br> calling install function for node :apps with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : translation_node
+ <br> calling install function for node :translation with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : images_node
+ <br> calling install function for node :images with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : files_node
+ <br> 2. _runCustomInstall() : netcom_node
+ <br> calling install function for node :netcom with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : library_node
+ <br> calling install function for node :library with newInstall flag :1
+ <br>  install function success 
+ <br>  addExtensions function success 
+ <br> 2. _runCustomInstall() : japps_application
+ <br> after _runCustomInstall() :
+ <br> _updatePreferences()
+ <br> updating preferences... : http://joobiserver.com/w/jml/p28
+ <br> updating preferences... : http://register.joobi.co
+ <br> _resetUser()
+ <br> _updateVersionAndTime()
+ <br> appID : 19
+ <br> _MainAppPatch()
+ <br> _refreshApps()
+ <br> _clearCache()
+ <br> Done with reseting Cache....
+ <br> _moveLogsToJoobi()
+ <br> END OF INSTALLATION
+ <br> Logs successfully moved

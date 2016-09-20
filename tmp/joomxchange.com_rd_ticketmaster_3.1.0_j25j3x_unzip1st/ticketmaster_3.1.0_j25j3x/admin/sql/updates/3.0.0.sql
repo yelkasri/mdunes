@@ -1,0 +1,1 @@
+ALTER TABLE `#__ticketmaster_config` ADD `load_jquery` TINYINT( 1 ) NOT NULL;

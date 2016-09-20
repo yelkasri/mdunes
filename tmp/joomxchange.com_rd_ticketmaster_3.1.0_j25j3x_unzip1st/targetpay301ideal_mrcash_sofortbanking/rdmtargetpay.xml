@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="rdmedia" method="upgrade">
+    <name>RD-Media TargetPay</name>
+    <author>Robert Dam</author>
+    <creationDate>June 2013</creationDate>
+    <copyright>2013 Robert Dam</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>info@rd-media.org</authorEmail>
+    <authorUrl>www.rd-media.org</authorUrl>
+    <version>3.0.1</version>
+    <description>TargetPay Payment Processor for Ticketmaster</description>
+    
+		<files>
+			<filename plugin="rdmtargetpay">rdmtargetpay.php</filename>
+			<filename plugin="rdmtargetpay">preparse.php</filename>
+			<folder>rdmedia_targetpay</folder>
+		</files>
+		
+		<languages>
+			<language tag="en-GB">language/en-GB.plg_rdmedia_rdmtargetpay.ini</language>
+		</languages>	
+	
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic">
+				<field name="rtlo" type="text"
+					default=""
+					size="15"
+					description="PLG_TARGETPAY_LAYOUTCODE_DESC"
+					label="PLG_TARGETPAY_LAYOUTCODE"
+				/>	
+				
+				<field name="description" type="text"
+					default=""
+					size="40"
+					description="PLG_TARGETPAY_DESCRIPTION_DESC"
+					label="PLG_TARGETPAY_DESCRIPTION"
+				/>								
+							
+				<field name="currency" type="list"
+					default="0"
+					description="PLG_TARGETPAY_CURRENTCY_DESC"
+					label="PLG_TARGETPAY_CURRENTCY"
+				>
+					<option value="EUR">Euro</option>
+				</field>
+
+				<field name="sandbox" type="list"
+					default="0"
+					description="PLG_TARGETPAY_SANDBOX_DESC"
+					label="PLG_TARGETPAY_SANDBOX"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+				
+				<field name="layout" type="list"
+					default="0"
+					description="PLG_TARGETPAY_LAYOUT_DESC"
+					label="PLG_TARGETPAY_LAYOUT"
+				>
+					<option value="0">PLG_TARGETPAY_LAYOUT_HORIZONTAL</option>
+					<option value="1">PLG_TARGETPAY_LAYOUT_VERTICAL</option>
+				</field>				
+				
+				<field type="spacer" name="myspacer1" hr="true" />	
+				
+				<field name="show_ideal" type="list"
+					default="0"
+					description="PLG_TARGETPAY_SHOW_IDEAL_DESC"
+					label="PLG_TARGETPAY_SHOW_IDEAL"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+				
+				<field name="failure_tpl_ideal" type="text"
+					default="0"
+					size="15"
+					description="PLG_TARGETPAY_FAILED_MESSAGE_DESC"
+					label="PLG_TARGETPAY_FAILED_MESSAGE"
+				/>	
+
+				<field name="success_tpl_ideal" type="text"
+					default="0"
+					size="15"
+					description="PLG_TARGETPAY_SUCCESS_MESSAGE_DESC"
+					label="PLG_TARGETPAY_SUCCESS_MESSAGE"
+				/>					
+				
+				<field type="spacer" name="myspacer2" hr="true" />			
+				
+				<field name="show_sofort" type="list"
+					default="0"
+					description="PLG_TARGETPAY_SHOW_SOFORT_DESC"
+					label="PLG_TARGETPAY_SHOW_SOFORT"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>									
+
+				<field name="failure_tpl_sofort" type="text"
+					default="0"
+					size="15"
+					description="PLG_TARGETPAY_FAILED_MESSAGE_DESC"
+					label="PLG_TARGETPAY_FAILED_MESSAGE"
+				/>	
+
+				<field name="success_tpl_sofort" type="text"
+					default="0"
+					size="15"
+					description="PLG_TARGETPAY_SUCCESS_MESSAGE_DESC"
+					label="PLG_TARGETPAY_SUCCESS_MESSAGE"
+				/>	
+				
+				<field type="spacer" name="myspacer3" hr="true" />
+				
+				<field name="show_mr_cash" type="list"
+					default="0"
+					description="PLG_TARGETPAY_SHOW_MR_CASH_DESC"
+					label="PLG_TARGETPAY_SHOW_MR_CASH"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+				
+				<field name="failure_tpl_mr_cash" type="text"
+					default="0"
+					size="15"
+					description="PLG_TARGETPAY_FAILED_MESSAGE_DESC"
+					label="PLG_TARGETPAY_FAILED_MESSAGE"
+				/>	
+
+				<field name="success_tpl_mr_cash" type="text"
+					default="0"
+					size="15"
+					description="PLG_TARGETPAY_SUCCESS_MESSAGE_DESC"
+					label="PLG_TARGETPAY_SUCCESS_MESSAGE"
+				/>					
+			</fieldset>
+			
+		</fields>
+	</config>
+
+</extension>

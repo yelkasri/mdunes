@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `#__members_details` (
+ `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ `first_name` varchar(100) NOT NULL,
+ `middle_name` varchar(100) NOT NULL,
+ `last_name` varchar(100) NOT NULL,
+ `suffix` varchar(20) NOT NULL,
+ `title` varchar(100) NOT NULL,
+ `department` varchar(100) NOT NULL,
+ `vendid` int(10) unsigned NOT NULL DEFAULT '0',
+ `description` text NOT NULL,
+ `skypeid` varchar(50) NOT NULL,
+ `facebook` varchar(200) NOT NULL,
+ `twitter` varchar(100) NOT NULL,
+ `linkedin` varchar(100) NOT NULL,
+ `phone` varchar(255) NOT NULL,
+ `mobile` varchar(255) NOT NULL,
+ `fax` varchar(255) NOT NULL,
+ `signature` text NOT NULL,
+ `datepwd` int(10) unsigned NOT NULL DEFAULT '1455494400',
+ PRIMARY KEY (`uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE=utf8mb4_unicode_ci;

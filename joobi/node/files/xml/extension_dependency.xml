@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rows>
+	<row>
+		<exdpid>82</exdpid>
+		<wid>156</wid>
+		<ref_wid>156</ref_wid>
+		<namekey>images.node</namekey>
+		<folder>images</folder>
+		<name>Images</name>
+		<type>150</type>
+		<publish>1</publish>
+		<status>1</status>
+		<params></params>
+		<destination>node</destination>
+		<parent>0</parent>
+		<trans>0</trans>
+		<certify>1</certify>
+		<version>5164</version>
+		<lversion>5164</lversion>
+		<pref>1</pref>
+		<rolid>1</rolid>
+		<install></install>
+		<ordering>444</ordering>
+		<core>1</core>
+		<modified>1466631782</modified>
+		<reload>1</reload>
+		<created>0</created>
+		<showconfig>1</showconfig>
+		<framework>0</framework>
+	</row>
+</rows>

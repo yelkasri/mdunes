@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="rdmedia" method="upgrade">
+    <name>RD-Media PayPal</name>
+    <author>Robert Dam</author>
+    <creationDate>Novemeber 2013</creationDate>
+    <copyright>2013 Robert Dam</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>info@rd-media.org</authorEmail>
+    <authorUrl>www.rd-media.org</authorUrl>
+    <version>3.0.2</version>
+    <description><![CDATA[
+    <br/><br/>PayPal Plugin to receive money from your customers.<br/><br/>
+    <a target="_blank" href="http://nas.rd-media.org/rdmedia2014/index.php/support/faq/43-paypal-ipn-plugin">Read More: Setting up IPN</a><br/>
+    <a target="_blank" href="http://nas.rd-media.org/rdmedia2014/index.php/support/faq/42-paypal-ipn-message">Read More: Setting up IPN for PayPal</a>
+    
+    ]]></description>
+    
+		<files>
+			<filename plugin="rdmpaypal">rdmpaypal.php</filename>
+			<folder>rdmedia_paypal</folder>
+		</files>
+
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic">
+				<field name="pp_email" type="text"
+					default=""
+					size="40"
+					description="Enter the email address from paypal."
+					label="PayPal Email Address"
+				/>				
+				
+				<field name="paypal_authcode" type="text"
+					default="0"
+					size="40"
+					description="Get the authorisation code from PayPal."
+					label="Authorisation Code PayPal"
+				/>	
+				
+				<field name="layout" type="list"
+					default="0"
+					description="If you have Twitter Bootstrap enabled in the Ticketmaster Configuration or you are running Joomla 3 you may set this value to Vertical View."
+					label="Plugin Layout"
+				>
+					<option value="0">Horizontal View</option>
+					<option value="1">Vertical View</option>
+				</field>					
+				
+				<field name="infobox" type="text"
+					default="0"
+					size="40"
+					description="Give information for your payment."
+					label="Message for Customer"
+				/>					
+
+				<field name="currency" type="list"
+					default="0"
+					description="Choose the PayPal Currency"
+					label="Choose Currency"
+				>
+					<option value="AUD">Australian Dollar</option>
+					<option value="BRL">Brazillian Real</option>
+					<option value="CAD">Canadian Dollar</option>
+					<option value="CZK">Czech Koruna</option>
+					<option value="DKK">Danish Krone</option>
+					<option value="EUR">Euro</option>
+					<option value="HKD">Hong Kong Dollar</option>
+					<option value="HUF">Hungarian Forint</option>
+					<option value="ILS">Israeli New Sheqel</option>
+					<option value="JPY">Japanese Yen</option>
+					<option value="MXN">Mexican Peso</option>
+					<option value="NOK">Norwegian Krone</option>
+					<option value="NZD">New Zealand Dollar</option>
+					<option value="PHP">Philippine Peso</option>
+					<option value="PLN">Polish Zloty</option>
+					<option value="GBP">Pound Sterling</option>
+					<option value="SGD">Singapore Dollar</option>
+					<option value="SEK">Swedish Krona</option>
+					<option value="CFH">Swiss Franc</option>
+					<option value="TWD">Taiwan New Dollar</option>
+					<option value="THB">Thai Baht</option>
+					<option value="TRY">Turkish Lira</option>
+					<option value="USD">U.S.Dollar</option>
+				</field>
+
+				<field name="sandbox_on" type="list"
+					default="0"
+					description="Turn on to use PayPal in testmode. More information can be found in our knowledgebase."
+					label="PayPal Sandbox"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>														
+
+				<field name="failure_tpl" type="text"
+					default="0"
+					size="15"
+					description="Message to show on failed payment, get the EID from meesage center"
+					label="Message on failed"
+				/>	
+
+				<field name="success_tpl" type="text"
+					default="0"
+					size="15"
+					description="Message to show on failed payment, get the EID from meesage center"
+					label="Message on success"
+				/>							
+				
+			</fieldset>
+			
+			<fieldset name="advanced">
+				
+				<field name="ipn_on" type="list"
+					default="0"
+					description="Turn this setting on only when you have turned on the IPN listner in the PayPal administration. More information can be found in our knowledgebase."
+					label="PayPal INP Messages"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>	
+				
+				<field name="mail_on_ipn" type="list"
+					default="0"
+					description="Turn this setting on when you want to receive an email on IPN payment.. More information can be found in our knowledgebase."
+					label="PayPal INP E-Mail"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+				
+				<field name="notify_email" type="text"
+					default=""
+					size="40"
+					description="Enter the email address to receive a notification of the IPN script."
+					label="Email Address (IPN)"
+				/>
+				
+				<field name="notify_email_msg" type="text"
+					default=""
+					size="40"
+					description="Enter a message #ID (EID) from the message center and that message will be shown.. More information can be found in our knowledgebase."
+					label="Message ID# (IPN)"
+				/>				
+								
+			</fieldset>
+			
+		</fields>
+	</config>
+
+</extension>

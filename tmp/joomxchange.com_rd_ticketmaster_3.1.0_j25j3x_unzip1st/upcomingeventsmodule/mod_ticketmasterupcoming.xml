@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+    <name>Ticketmaster Upcoming Events</name>
+    <author>Robert Dam</author>
+    <version>1.0</version>
+    <description>This is a vertical module to show upcoming events.</description>
+    
+	<files>
+        <filename>mod_ticketmasterupcoming.xml</filename>
+        <filename module="mod_ticketmasterupcoming">mod_ticketmasterupcoming.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+	
+	<languages folder="site">
+		<language tag="en-GB">languages/en-GB/en-GB.mod_ticketmasterupcoming.ini</language>
+	</languages>		
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="list_limit"
+					type="text"
+					label="MOD_TICKETMASTER_UPCOMING"
+					description="MOD_TICKETMASTER_UPCOMING_DESC" />
+				<field
+					name="title"
+					type="list"
+					default="1"
+					label="MOD_TICKETMASTER_UPCOMING_TITLE"
+					description="MOD_TICKETMASTER_UPCOMING_TITLE_DESC"
+				>
+					<option value="1">MOD_TICKETMASTER_EVENTNAME_ALL</option>
+					<option value="2">MOD_TICKETMASTER_EVENTNAME_ONLY</option>
+					<option value="3">MOD_TICKETMASTER_TICKETNAME</option>
+				</field>
+				<field
+					name="date_position"
+					type="list"
+					default="0"
+					label="MOD_TICKETMASTER_SHOW_DATE"
+					description="MOD_TICKETMASTER_SHOW_DATE_DESC"
+				>
+					<option value="0">MOD_TICKETMASTER_SHOW_DATE_NO_SHOW</option>
+					<option value="1">MOD_TICKETMASTER_SHOW_DATE_POSITION_1</option>
+					<option value="2">MOD_TICKETMASTER_SHOW_DATE_POSITION_2</option>
+					<option value="3">MOD_TICKETMASTER_SHOW_DATE_POSITION_3</option>
+					<option value="4">MOD_TICKETMASTER_SHOW_DATE_POSITION_4</option>
+				</field>
+				<field
+					name="date_format"
+					type="text"
+					label="MOD_TICKETMASTER_DATE_FORMAT"
+					description="MOD_TICKETMASTER_DATE_FORMAT_DESC" />													
+			</fieldset>
+
+			<fieldset
+				name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="MOD_TICKETMASTER_MODULE_SFX_LABEL"
+					description="MOD_TICKETMASTER_MODULE_SFX_LABEL_DESC" />
+				<field
+					name="ul_sfx"
+					type="text"
+					label="MOD_TICKETMASTER_UL_SFX_LABEL"
+					description="MOD_TICKETMASTER_UL_SFX_LABEL_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>

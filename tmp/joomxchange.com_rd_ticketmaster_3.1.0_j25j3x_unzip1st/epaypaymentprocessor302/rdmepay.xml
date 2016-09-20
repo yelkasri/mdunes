@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="rdmedia" method="upgrade">
+        <name>RDMedia ePay Plugin</name>
+        <author>Robert Dam</author>
+        <creationDate>June 2013</creationDate>
+        <copyright>Copyright (C) 2008 Holder. All rights reserved.</copyright>
+        <license>GNU General Public License</license>
+        <authorEmail>info@rd-media.org</authorEmail>
+        <authorUrl>http://rd-media.org</authorUrl>
+        <version>3.0.2</version>
+        <description>An ePay Plugin for Ticketmaster</description>
+		
+		<files>
+			<filename plugin="rdmepay">rdmepay.php</filename>
+			<folder>rdmedia_epay</folder>
+		</files>
+
+		<languages>
+			<language tag="en-GB">language/en-GB.plg_rdmedia_rdmepay.ini</language>
+		</languages>
+
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic">
+				
+				<field name="layout" type="list"
+					default="0"
+					description="PLG_EPAY_VIEW_DESCRIPTION"
+					label="PLG_EPAY_LAYOUT"
+				>
+					<option value="0">PLG_EPAY_HORIZONTAL_VIEW</option>
+					<option value="1">PLG_EPAY_VERTICAL_VIEW</option>
+				</field>				
+				
+				<field name="merchantnumber" type="text"
+						default=""
+						size="40"
+						description="PLG_EPAY_MERCHANT_NR_DESC"
+						label="PLG_EPAY_MERCHANT_NR"
+				/>				
+					
+				<field name="md5key" type="text"
+						default="0"
+						size="40"
+						description="PLG_EPAY_MERCHANT_MD5_CHECKSUM_DESC"
+						label="PLG_EPAY_MERCHANT_MD5_CHECKSUM"
+				/>	
+					
+				<field name="sms" type="list"
+						default="0"
+						description="PLG_EPAY_SMS_INFO"
+						label="PLG_EPAY_SMS"
+					>
+						<option value="0">JOFF</option>
+						<option value="1">JON</option>
+				</field>
+					
+				<field name="paymenttype" type="list"
+						default="0"
+						description="PLG_EPAY_PAYMENT_TYPE_INFO"
+						label="PLG_EPAY_PAYMENT_TYPE"
+					>
+						<option value="0">Standard Payment</option>
+						<option value="1">3D Secure Visa</option>
+						<option value="2">3D Secure MasterCard</option>
+						<option value="3">3D Secure JCB</option>
+						<option value="17">EWIRE</option>
+						<option value="20">eDankort</option>
+						<option value="21">Nordea</option>		
+						<option value="22">Danske Bank</option>
+					</field>								
+	
+				<field name="currency" type="list"
+						default="0"
+						description="PLG_EPAY_DESIRED_CURRENCY_INFO"
+						label="PLG_EPAY_DESIRED_CURRENCY"
+					>			
+					
+					<option value="208">DKK</option>
+					<option value="987">EUR</option>
+					<option value="840">USD</option>
+					<option value="578">NOK</option>
+					<option value="752">SEK</option>
+					<option value="826">GBP</option>
+				</field>
+				
+				<field name="language" type="list" 
+					default="0" 
+					label="PLG_EPAY_DESIRED_LANGUAGE" 
+					description="PLG_EPAY_DESIRED_LANGUAGE_INFO"
+					>
+	
+					<option value="1">Danish</option>
+					<option value="2">English</option>
+					<option value="3">Swedisch</option>
+				</field>					
+	
+				<field name="failure_tpl" type="text"
+						default="0"
+						size="15"
+						description="PLG_EPAY_FAILURE_TMPL_INFO"
+						label="PLG_EPAY_FAILURE_TMPL"
+				/>	
+	
+				<field name="success_tpl" type="text"
+						default="0"
+						size="15"
+						description="PLG_EPAY_SUCCESS_TMPL_INFO"
+						label="PLG_EPAY_SUCCESS_TMPL"
+				/>	
+					
+				<field name="infobox" type="text"
+						default="0"
+						size="15"
+						description="PLG_EPAY_INFO_AT_CHECKOUT_INFO"
+						label="PLG_EPAY_INFO_AT_CHECKOUT"
+				/>								
+				
+			</fieldset>
+			
+		</fields>
+	</config>
+
+</extension>

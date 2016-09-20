@@ -1,0 +1,53 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Slidenav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@slidenav-width:                                12px;
+@slidenav-height:                               21px;
+
+@slidenav-color:                                @global-color;
+@slidenav-font-size:                            21px;
+@slidenav-previous-icon:                        "\e603";
+@slidenav-next-icon:                            "\e602";
+
+@slidenav-hover-color:                          @global-primary-color;
+
+@slidenav-contrast-color:                       @global-contrast-color;
+@slidenav-contrast-hover-color:                 lighten(@global-primary-color, 10%);
+@slidenav-contrast-active-color:                @global-muted-color;
+
+// Component
+// ========================================================================
+
+.hook-slidenav() {}
+
+.hook-slidenav-hover() {}
+
+.hook-slidenav-active() {}
+
+.hook-slidenav-contrast() {}
+
+.hook-slidenav-contrast-hover() {}
+
+.hook-slidenav-contrast-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-slidenav-misc() {
+
+    .uk-slidenav-previous:before,
+    .uk-slidenav-next:before { font-family: Finch; }
+
+    [dir="rtl"] .uk-slidenav-previous:before { content: @slidenav-next-icon; }
+    [dir="rtl"] .uk-slidenav-next:before { content: @slidenav-previous-icon; }
+
+}

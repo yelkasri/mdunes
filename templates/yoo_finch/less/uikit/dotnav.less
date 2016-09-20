@@ -1,0 +1,56 @@
+// Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+//
+// Component: Dotnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dotnav-width:                                  12px;
+
+@dotnav-background:                             fade(@global-muted-color, 70%);
+
+@dotnav-hover-background:                       rgba(0,0,0,0);
+@dotnav-onclick-background:                     @global-primary-color;
+@dotnav-active-background:                      @global-primary-color;
+
+@dotnav-contrast-background:                    rgba(255,255,255,0.4);
+@dotnav-contrast-hover-background:              rgba(0,0,0,0);
+@dotnav-contrast-onclick-background:            @global-primary-color;
+@dotnav-contrast-active-background:             @global-primary-color;
+
+//
+// New
+//
+
+@dotnav-border:                                 @global-primary-border;
+@dotnav-border-width:                           2px;
+
+
+// Component
+// ========================================================================
+
+.hook-dotnav-item() { border: @dotnav-border-width solid transparent; }
+
+.hook-dotnav-item-hover() { border-color: @dotnav-border; }
+
+.hook-dotnav-item-onclick() {}
+
+.hook-dotnav-item-active() {}
+
+.hook-dotnav-contrast-item() {}
+
+.hook-dotnav-contrast-item-hover() {}
+
+.hook-dotnav-contrast-item-onclick() {}
+
+.hook-dotnav-contrast-item-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dotnav-misc() {}
